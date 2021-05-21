@@ -1,0 +1,67 @@
+/*Reset defaults*/
+
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*End Reset*/
+
+/*Removing bullets for every unordered list*/
+a {
+    text-decoration: none;
+    color: #013563
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+#sub-header-1 {
+    display: grid;
+    grid-template-columns: 250px auto 300px;
+    width: 960px;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+}
+    #sub-header-1 ul {
+        display: flex;
+        gap: 10px;
+    }
+
+#sub-header-1 nav:last-child ul{
+    justify-content:flex-end;
+
+}
+
+#hero {
+    height:400px;
+    background-color:#013563;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    flex-direction:column;
+    display: flex;
+
+}
+ 
+#hero button {
+    background-color: #FA7D00;
+    font-size: 30px;
+    border-collapse: collapse;
+    border:none;
+    border-radius: 10%;
+    padding:10px 10px;
+
+}
+
+#hero button:hover{
+    color:antiquewhite;
+
+}
