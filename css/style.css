@@ -55,13 +55,94 @@ ul {
     background-color: #FA7D00;
     font-size: 30px;
     border-collapse: collapse;
-    border:none;
+    border: 2px solid transparent;
     border-radius: 10%;
     padding:10px 10px;
 
 }
 
 #hero button:hover{
-    color:antiquewhite;
+    color:rgba(255, 255, 255, 0.959);
+    background-color:blue;
+    border: 2px solid lightblue;
 
+
+    
+
+}
+
+#sub-header-1 ul li a {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+
+
+}
+
+#sub-header-1 ul li a:hover{
+    border: 1px solid #287be0;
+    border-radius: 4px;
+    border: 2px solid lightblue;
+
+}
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom:40px;
+    /* overflow: hidden; */
+    /* border:2px dotted red; */
+    gap: 15px;
+    /* flex-direction: row-reverse; */
+    flex-direction:column;
+}
+
+#services article{
+    overflow: hidden;
+}
+
+#services h1{
+    grid-column: span 3;
+}
+
+#services footer{
+    grid-column: span 3;
+}
+
+#services article figure {
+    height: 300px;
+    /* border: 2px dotted cyan; */
+    overflow: hidden;
+    /* margin-bottom: 15px; */
+}
+
+#services article h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#services h1 {
+    text-align: center;
+}
+
+#services footer a{
+    padding: 10px 20px;
+    background-color:red;
+    border: 2px solid transparent;
+    color: black;
+    border-radius: 10px;
+}
+
+#services footer a:hover{
+    background-color: #fff;
+    border: 2px solid red;
+     
+
+}
+
+#services footer{
+    text-align: right;
 }
