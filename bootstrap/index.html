@@ -8,25 +8,43 @@
     <title>Bootstrap layout</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <figure class="navbar-brand-container">
+                <a class="navbar-brand" href="">
+                    <img src="media/images/spacexlogo.png" alt="Space-X" height="36.25px" width="260px">
+                </a>
+            </figure>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+                
+            
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="">Facebook</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Twitter</a></li>
+                </ul>
+            </div>
+            <!--bring a menu button on top incase the screen size is smaller-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </nav>
+        
     <header>
-        <section id="sub-header-1">
-            <figure><a href=""><img src="media/images/spacexlogo.png" alt="Space-X" height="36.25px" width="260px"></a></figure>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                </ul>
-            </nav> 
-        </section>
         <section id="hero">
+            <div class="layout">
+                <video autoplay>
+                    <source src="media/videos/Space-hero-video.mp4" type="video/mp4"></video>
+                </video>
+            </div>
             <h1>Go with us to  mars at $5m</h1>
             <button id="hero button">Buy now</button> 
         </section>
