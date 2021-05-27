@@ -4,9 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Bootstrap layout</title>
 </head>
 <body>
-    
+
+    <header>
+        <section id="sub-header-1">
+            <figure><a href=""><img src="media/images/spacexlogo.png" alt="Space-X" height="36.25px" width="260px"></a></figure>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </nav> 
+        </section>
+        <section id="hero">
+            <h1>Go with us to  mars at $5m</h1>
+            <button id="hero button">Buy now</button> 
+        </section>
+    </header>
+    <main id="services">
+        <h1>Our Services</h1>
+        <article>
+            <figure><img src="media/images/dragon.jpeg" alt="Dragon photo"></figure>
+            <h3>Dragon</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere perspiciatis, iusto quod quasi, nostrum similique numquam ipsam nam, natus corrupti quas saepe alias atque nihil adipisci ratione sequi iure optio?</p>
+        </article>
+        <article>
+            <figure><img src="media/images/falcon9.jpg" alt="falcon9 photo"></figure>
+            <h3>Falcon 9</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias modi totam vero! Exercitationem quaerat, tenetur quibusdam distinctio repellat, ex eum error asperiores in totam sit non molestias aliquid neque incidunt?</p>
+        </article>
+        <article>
+            <figure><img src="media/images/falconheavy.jpg" alt="falconheavy photo"></figure>
+            <h3>Falcon Heavy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet totam itaque aperiam porro, ratione adipisci tempora nihil eum quas voluptate necessitatibus velit voluptas quibusdam quos assumenda iste at voluptatum!</p>
+        </article>
+        <footer>
+            <a href="#">More</a>
+        </footer>
+        
+    </main>
+    <footer id="main-footer" >
+        <section>
+            <article>
+                <figure><img src="" alt=""></figure>
+                <p></p>
+            </article>
+
+            <nav>
+                <h2>Quick menu</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                
+                </ul>
+            </nav>
+
+            <article>
+                <h2>Contact</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="fullname">Name</label><br/>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                        
+                    <div>
+                        <label for="email">Email</label><br/>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    
+                    <div>
+                        <label for="message">Message</label><br/>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <button class="btn success">Send</button>
+                </form>
+            </article>
+        </section>
+        <section>
+            <div>
+                <p>&copy Copyright 2021</p>
+            </div>
+            <div>
+                <button>Top</button>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
