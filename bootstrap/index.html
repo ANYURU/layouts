@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.style.css">
     <title>Bootstrap layout</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="">Twitter</a></li>
                 </ul>
             </div>
-            <!--bring a menu button on top incase the screen size is smaller-->
+            <!--bring a menu button on top incase the screen size is becomes smaller-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,16 +39,17 @@
         </div>
     </nav>
         
-    <header>
-        <section id="hero">
-            <div class="layout">
-                <video autoplay>
-                    <source src="media/videos/Space-hero-video.mp4" type="video/mp4"></video>
-                </video>
-            </div>
-            <h1>Go with us to  mars at $5m</h1>
-            <button id="hero button">Buy now</button> 
+    <header id="hero" class="position-relative d-flex flex-column">
+            
+        <video class="position-absolute" autoplay loop>
+            <source src="media/videos/Space-hero-video.mp4" type="video/mp4">
+        </video>
+    
+        <section class="d-flex flex-column align-items-center justify-content-center" id="layer">
+            <h1 class="text-white">Go with us to  mars at $5m</h1>
+            <button class="btn btn-danger">Buy now</button> 
         </section>
+        
     </header>
     <main id="services">
         <h1>Our Services</h1>
